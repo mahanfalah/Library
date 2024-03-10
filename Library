@@ -1,0 +1,59 @@
+#simpel library where you can add,remove,edit and make list of your books
+#HighFM
+
+
+class book:
+    def __init__(self,title,subject):
+        self.title=title
+        self.subject=subject
+    
+    def chap(self):
+        print(self.title,self.subject)
+        
+    books=[]   
+    while 1:
+         
+        i = input("1-add , 2-remove , 3-change , 4-list")
+     
+    if  i == "1":
+        title=input('title:')
+        subject=input('subject:')
+        
+        book =book(title,subject)
+        books.append(book)
+    
+    
+    
+    if i=="2":
+        for i,book in enumerate(book):
+            print(i,end="")
+            book.chap()
+        i = input(int("number:"))
+        books.pop(num-1)    
+     
+     
+     
+    if i=="3":
+            for i,book in enumerate(book):
+                print(i,end="")
+                book.chap()
+            num = input(int("number:"))
+            
+            title=input("new file:")
+            subject=input("mew subject:")
+            book=books[num-1]
+            
+            book.title=title
+            book.subject=subject    
+      
+      
+      
+      
+            if i=="4":               
+             
+             for i,books in enumerate(book):
+                 print(i,end="")
+                 book.chap()
+            else:
+                  break         
+                 
